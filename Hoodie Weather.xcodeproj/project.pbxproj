@@ -13,6 +13,7 @@
 		CE1C961621B9988F009D147D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1C961421B9988F009D147D /* Main.storyboard */; };
 		CE1C961821B99890009D147D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1C961721B99890009D147D /* Assets.xcassets */; };
 		CE1C961B21B99890009D147D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1C961921B99890009D147D /* LaunchScreen.storyboard */; };
+		CE1C962321B99F57009D147D /* WeatherInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C962221B99F57009D147D /* WeatherInterpreter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CE1C961721B99890009D147D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1C961A21B99890009D147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1C961C21B99890009D147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1C962221B99F57009D147D /* WeatherInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInterpreter.swift; sourceTree = "<group>"; };
 		F3D18AFAE85596FC97A26130 /* Pods-Hoodie Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hoodie Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hoodie Weather/Pods-Hoodie Weather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				CE1C961721B99890009D147D /* Assets.xcassets */,
 				CE1C961921B99890009D147D /* LaunchScreen.storyboard */,
 				CE1C961C21B99890009D147D /* Info.plist */,
+				CE1C962221B99F57009D147D /* WeatherInterpreter.swift */,
 			);
 			path = "Hoodie Weather";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				CE1C961321B9988F009D147D /* ViewController.swift in Sources */,
 				CE1C961121B9988F009D147D /* AppDelegate.swift in Sources */,
+				CE1C962321B99F57009D147D /* WeatherInterpreter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
