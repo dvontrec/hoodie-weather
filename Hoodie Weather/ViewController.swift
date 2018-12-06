@@ -19,6 +19,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     // Variable for location manager
     let locationManager = CLLocationManager()
+    // variable to hold the weather interperater
+    let weatherInterprater = WeatherInterpreter()
     
     @IBOutlet weak var weatherLabel: UILabel!
     
@@ -37,7 +39,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
 
     @IBAction func getWeather(_ sender: Any) {
-        weatherLabel.text = "clicked"
+        weatherLabel.text = weatherInterprater.hoodieCheck(temp: 43)
     }
 }
 
