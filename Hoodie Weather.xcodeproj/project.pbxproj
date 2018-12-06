@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3893147EF20C085CE251C9A6 /* Pods_Hoodie_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214051CCD0F3984E835F8F85 /* Pods_Hoodie_Weather.framework */; };
 		CE1C961121B9988F009D147D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C961021B9988F009D147D /* AppDelegate.swift */; };
 		CE1C961321B9988F009D147D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C961221B9988F009D147D /* ViewController.swift */; };
 		CE1C961621B9988F009D147D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1C961421B9988F009D147D /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		214051CCD0F3984E835F8F85 /* Pods_Hoodie_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hoodie_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3098E6AD449961E1D8C1D5 /* Pods-Hoodie Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hoodie Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hoodie Weather/Pods-Hoodie Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		CE1C960D21B9988F009D147D /* Hoodie Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hoodie Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1C961021B9988F009D147D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1C961221B9988F009D147D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CE1C961721B99890009D147D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1C961A21B99890009D147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1C961C21B99890009D147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D18AFAE85596FC97A26130 /* Pods-Hoodie Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hoodie Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hoodie Weather/Pods-Hoodie Weather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3893147EF20C085CE251C9A6 /* Pods_Hoodie_Weather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D8ECCE4BC5EA06F800A51C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				214051CCD0F3984E835F8F85 /* Pods_Hoodie_Weather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88F3A58D457FFE8067678AC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F3098E6AD449961E1D8C1D5 /* Pods-Hoodie Weather.debug.xcconfig */,
+				F3D18AFAE85596FC97A26130 /* Pods-Hoodie Weather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE1C960421B9988F009D147D = {
 			isa = PBXGroup;
 			children = (
 				CE1C960F21B9988F009D147D /* Hoodie Weather */,
 				CE1C960E21B9988F009D147D /* Products */,
+				88F3A58D457FFE8067678AC1 /* Pods */,
+				4D8ECCE4BC5EA06F800A51C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE1C961F21B99890009D147D /* Build configuration list for PBXNativeTarget "Hoodie Weather" */;
 			buildPhases = (
+				31C89EF97AA869FBA995A6E5 /* [CP] Check Pods Manifest.lock */,
 				CE1C960921B9988F009D147D /* Sources */,
 				CE1C960A21B9988F009D147D /* Frameworks */,
 				CE1C960B21B9988F009D147D /* Resources */,
+				135F33D6B74CCB5836A355EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		135F33D6B74CCB5836A355EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hoodie Weather/Pods-Hoodie Weather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hoodie Weather/Pods-Hoodie Weather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31C89EF97AA869FBA995A6E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hoodie Weather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE1C960921B9988F009D147D /* Sources */ = {
@@ -280,11 +355,13 @@
 		};
 		CE1C962021B99890009D147D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F3098E6AD449961E1D8C1D5 /* Pods-Hoodie Weather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P474U7DFXB;
 				INFOPLIST_FILE = "Hoodie Weather/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +369,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dvontrecoleman.Hoodie-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE1C962121B99890009D147D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D18AFAE85596FC97A26130 /* Pods-Hoodie Weather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P474U7DFXB;
 				INFOPLIST_FILE = "Hoodie Weather/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dvontrecoleman.Hoodie-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
